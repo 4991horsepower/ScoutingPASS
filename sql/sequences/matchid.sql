@@ -1,0 +1,13 @@
+-- SEQUENCE: public.matchid
+
+-- DROP SEQUENCE IF EXISTS public.matchid;
+
+CREATE SEQUENCE IF NOT EXISTS public.matchid
+    INCREMENT 1
+    START 1
+    MINVALUE 1
+    MAXVALUE 9223372036854775807
+    CACHE 1;
+
+ALTER SEQUENCE public.matchid
+    OWNER TO root;

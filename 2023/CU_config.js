@@ -75,10 +75,6 @@ var config_data = `
       "showUndo": "false",
       "shape": "circle 12 black red true"
     },
-    { "name": "Crossed Cable",
-      "code": "acc",
-      "type": "bool"
-    },
     { "name": "Crossed Charging Station",
       "code": "acs",
       "type": "bool"
@@ -116,10 +112,6 @@ var config_data = `
       "shape": "circle 12 black red true",
       "cycleTimer": "tct"
     },
-    { "name": "Feeder Count<br>(Fed another bot)",
-      "code": "tfc",
-      "type": "counter"
-    },
     { "name": "Was Fed<br>Game Pieces",
       "code": "wf",
       "type": "bool"
@@ -130,11 +122,8 @@ var config_data = `
     },
     { "name": "Who Defended this bot",
       "code": "who",
-      "type": "text"
-    },
-    { "name": "Smart Placement<br>(creates Links)",
-      "code": "lnk",
-      "type": "bool"
+      "type": "text",
+      "maxsize": 200
     },
     { "name": "Floor Pickup",
       "code": "fpu",
@@ -182,10 +171,7 @@ var config_data = `
       },
       "defaultValue": "x"
     },
-    { "name": "Links Scored",
-      "code": "ls",
-      "type": "counter"
-    },
+
     { "name": "Defense Rating",
       "code": "dr",
       "type": "radio",
@@ -226,16 +212,11 @@ var config_data = `
       "code": "dc",
       "type": "bool"
     },
-    { "name": "Make good<br>alliance partner?",
-      "tooltip": "Would you want this robot on your alliance in eliminations?",
-      "code": "all",
-      "type": "bool"
-    },
     { "name": "Comments",
       "code": "co",
       "type": "text",
       "size": 15,
-      "maxSize": 50
+      "maxSize": 500
     }
   ]
 }`;
