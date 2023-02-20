@@ -720,10 +720,6 @@ function configure() {
     idx = addElement(pmt, idx, element);
   });
 
-  if (!enableGoogleSheets) {
-    document.getElementById("submit").style.display = "none";
-  }
-
   return 0
 }
 
@@ -1422,5 +1418,6 @@ window.onload = function () {
       console.log("Enabling Google Sheets.");
       setUpGoogleSheets();
     }
+    setUpBackend();
   }
 };
