@@ -1,5 +1,5 @@
 function setUpBackend() {
-  const scriptURL = process.env.ROOT_URL + '/savematch'
+  const scriptURL = '/savematch'
   const form = document.querySelector('#scoutingForm')
   const btn = document.querySelector('#submit')
 
