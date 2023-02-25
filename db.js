@@ -1,7 +1,9 @@
 const Pool = require('pg').Pool
-const connectionString = process.env.DATABASE_URL
 const pool = new Pool({
-    connectionString
+    connectionString: process.env.DATABASE_URL,
+    ssl: {
+        rejectUnauthorized: false
+      }
 })
 const getMatches = (request, response) => {
     pool.query('SELECT * FROM pre_match', (error, results) => {
