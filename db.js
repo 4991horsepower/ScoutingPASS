@@ -1,10 +1,7 @@
 const Pool = require('pg').Pool
+const connectionString = process.env.DATABASE_URL
 const pool = new Pool({
-    user: 'root',
-    host: 'localhost',
-    database: 'frc_2023_scouting',
-    password: 'root',
-    port: 5432,
+    connectionString
 })
 const getMatches = (request, response) => {
     pool.query('SELECT * FROM pre_match', (error, results) => {

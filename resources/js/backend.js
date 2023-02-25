@@ -29,6 +29,6 @@ function setUpBackend() {
             alert('Error!', error.message)})
 
     btn.disabled = false
-    btn.innerHTML = "Send to Google Sheets"
+    btn.innerHTML = "Send to Server"
   })
 }
