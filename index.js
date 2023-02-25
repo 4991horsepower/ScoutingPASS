@@ -3,7 +3,7 @@ const bodyParser = require('body-parser')
 const path = require('path');
 const app = express()
 const db = require('./db')
-const port = 3000
+const port = process.env.PORT
 app.use(bodyParser.json())
 app.use('/resources', express.static(path.join(__dirname, 'resources')))
 app.use('/2023', express.static(path.join(__dirname, '2023')))
